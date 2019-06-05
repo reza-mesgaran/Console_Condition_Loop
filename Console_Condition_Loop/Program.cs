@@ -15,7 +15,7 @@ namespace Console_Condition_Loop
             //{
             //    Console.WriteLine("Dead Loop");
             //}
-            
+
             //------------ Prefix-increment operator  (First Compare then Increase)
             //int x = 0;
             //while (x++<10)
@@ -28,21 +28,43 @@ namespace Console_Condition_Loop
             //{
             //    Console.WriteLine(y);
             //}
-            
+
             //------------ For-Loop (Syntax)
-            for(int x=0; x<10;x++)
+            //for(int x=0; x<10;x++)
+            //{
+            //    Console.WriteLine(x);
+            //}
+            ////------------ For-Loop (semicolons are mandatory)
+            //int y = 0;
+            //for(;y<10;)
+            //{
+            //    Console.WriteLine(y);
+            //    y = y + 1;
+            //}
+            //------------ Break (Jump-Out the Loops)
+            int x = 0;
+            while (x<10)
             {
+                if (x==5)
+                {
+                    break;  // When x=5 => Exit from While-Loop 
+                }                   
                 Console.WriteLine(x);
+                x++;
             }
-            //------------ For-Loop (semicolons are mandatory)
+            //------------ Continue (Just skips the remaining statements of that iteration of the loop.)
+            Console.WriteLine("-------------------------------");
             int y = 0;
-            for(;y<10;)
+            while (y<10)
             {
-                Console.WriteLine(y);
-                y = y + 1;
+                y++;
+                if (y == 5)
+                {
+                    continue;  // When Y=5 => leave current iteration and Go for next iteration
+                }                  
+                Console.WriteLine(y);                
             }
             Console.ReadKey();
-            //------------
         }
     }
 }
