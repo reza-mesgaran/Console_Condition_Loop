@@ -15,20 +15,34 @@ namespace Console_Condition_Loop
             //{
             //    Console.WriteLine("Dead Loop");
             //}
+            
             //------------ Prefix-increment operator  (First Compare then Increase)
-            int x = 0;
-            while (x++<10)
+            //int x = 0;
+            //while (x++<10)
+            //{
+            //    Console.WriteLine(x);
+            //}
+            ////------------ Postfix-increment operator (First Increase Then Compare)
+            //int y = 0;
+            //while(++y<10)
+            //{
+            //    Console.WriteLine(y);
+            //}
+            
+            //------------ For-Loop (Syntax)
+            for(int x=0; x<10;x++)
             {
                 Console.WriteLine(x);
             }
-            //------------ Postfix-increment operator (First Increase Then Compare)
+            //------------ For-Loop (semicolons are mandatory)
             int y = 0;
-            while(++y<10)
+            for(;y<10;)
             {
                 Console.WriteLine(y);
+                y = y + 1;
             }
             Console.ReadKey();
-
+            //------------
         }
     }
 }
