@@ -10,12 +10,25 @@ namespace Console_Condition_Loop
     {
         static void Main(string[] args)
         {
-            //------------ Dead Loop
-            while(true)
+            ////------------ Dead Loop
+            //while(true)
+            //{
+            //    Console.WriteLine("Dead Loop");
+            //}
+            //------------ Prefix-increment operator  (First Compare then Increase)
+            int x = 0;
+            while (x++<10)
             {
-                Console.WriteLine("Dead Loop");
+                Console.WriteLine(x);
             }
-            //-----------------------------------------------
+            //------------ Postfix-increment operator (First Increase Then Compare)
+            int y = 0;
+            while(++y<10)
+            {
+                Console.WriteLine(y);
+            }
+            Console.ReadKey();
+
         }
     }
 }
