@@ -9,7 +9,6 @@ A quick reference guide for conditions and loops in C#.
 - [D. Loop Control Statements](#d-loop-control-statements)
 - [E. Conditional Operator](#e-conditional-operator)
 - [F. Infinite Loop](#f-infinite-loop)
-- [G. Code Example](#g-code-example)
 - [Best Practices](#best-practices)
 
 ## A. While Loop:
